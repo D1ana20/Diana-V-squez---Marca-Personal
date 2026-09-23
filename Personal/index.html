@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Diana Vásquez — Mi marca personal</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- ============ HEADER / NAV ============ -->
+<header class="site-header">
+  <div class="wrap header-row">
+    <!-- Logo: coloca tu imagen en assets/logo.jpg. Si no existe, se muestra "DV" -->
+    <a href="#inicio" class="brand">
+      <span class="brand-mark">
+        <img src="logo.PNG" alt="Logo de Diana Vásquez" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <span class="brand-mark-fallback">DV</span>
+      </span>
+      <span class="brand-text">
+        <strong>Diana Vásquez</strong>
+        <small>Mi marca personal</small>
+      </span>
+    </a>
+    <nav class="main-nav">
+      <a href="#inicio">Inicio</a>
+      <a href="#formacion">Formación</a>
+      <a href="#logros">Logros</a>
+      <a href="#portafolio">Portafolio</a>
+      <a href="#voluntariado">Voluntariado</a>
+    </nav>
+    <a href="#contacto" class="btn btn-primary">Contacto <span aria-hidden="true">→</span></a>
+    <!-- Botón hamburguesa, solo visible en móvil -->
+    <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <!-- ============ HERO / INICIO ============ -->
+  <section id="inicio" class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">Hola, soy</p>
+        <h1>Diana Vásquez</h1>
+        
+        <p class="hero-lead">Soy una joven estudiante de bachillerato interesada en la tecnología, la robótica, la programación y la
+           innovación. Soy una persona apasionada por aprender y participar activamente en mi entorno, también me considero creativa,
+            responsable y perseverante, con experiencia trabajando en equipo y participando en proyectos tecnológicos y educativos.
+             <div class="hero-actions">
+          <a href="#formacion" class="btn btn-primary">Conoce mi trayectoria <span aria-hidden="true">→</span></a>
+          <a href="CV%20-%20Diana%20V%C3%A1squez.pdf" class="btn btn-ghost" download="CV - Diana Vásquez.pdf">Descargar CV</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        
+        <div class="avatar-wrap">
+          <div class="avatar-circle">
+            <img src="perfi.jpeg" alt="Foto de Diana Vásquez" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <span class="avatar-fallback">DV</span>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- ============ FORMACIÓN ACADÉMICA  ============ -->
+  <section id="formacion" class="section alt">
+    <div class="wrap formacion-layout">
+      <!-- Columna izquierda: Títulos y descripción -->
+      <div class="formacion-header">
+        <p class="section-eyebrow">FORMACIÓN ACADÉMICA</p>
+        <h2>Mi formación</h2>
+        <p class="section-lead">Un recorrido por las etapas que han formado mi trayectoria académica.</p>
+      </div>
+
+      <!-- Columna derecha: Las 3 tarjetas (sin íconos/emojis) -->
+      <div class="formacion-cards">
+        <article class="info-tile">
+          <div class="tile-icon">
+            <img src="1.PNG" alt="Ícono Bachillerato">
+          </div>
+          <p class="tile-tag">2025 - Actualidad</p>
+          <h3>Bachillerato</h3>
+          <p class="tile-org">Instituto Nacional Joaquín Ernesto Cárdenas</p>
+          <p>Curso actualmente el segundo año de bachillerato, complementando mi formación con programas tecnológicos y actividades extracurriculares.</p>
+        </article>
+
+        <article class="info-tile">
+          <div class="tile-icon">
+            <img src="2.PNG" alt="Ícono Bachillerato">
+          </div>
+          <p class="tile-tag">2016 - 2024</p>
+          <h3>Educación Básica</h3>
+          <p class="tile-org">Centro Escolar Prof. Atilio Armando Pérez Soto</p>
+          <p>Formación básica y desarrollo de competencias académicas, sociales y personales.</p>
+        </article>
+
+        <article class="info-tile">
+          <div class="tile-icon">
+            <img src="3.PNG" alt="Ícono Bachillerato">
+          </div>
+          <p class="tile-tag">2024 - Actualidad </p>
+          <h3>Educación extracurricular</h3>
+          <p class="tile-org">Programa Empresarial ¡Supérate! Grupo Q</p>
+          <p>Programa de formación que fortalece mis conocimientos en inglés, informática y valores, impulsando mi crecimiento académico y profesional.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ LOGROS ACADÉMICOS ============ -->
+<section id="logros" class="section">
+  <div class="wrap">
+    <p class="section-eyebrow">LOGROS ACADÉMICOS</p>
+    <h2>Reconocimientos y certificaciones</h2>
+    <p class="section-lead">Esfuerzo, disciplina y constancia en cada paso.</p>
+
+    <div class="logros-grid-2x2">
+      <!-- Tarjeta 1: Medallas -->
+      <article class="badge-tile">
+        <span class="top-badge">RECONOCIMIENTO</span>
+        <h3>Medallas</h3>
+        <ul class="tile-list">
+          <!-- Aquí puedes agregar tus medallas -->
+          <li>8 Medallas de primer lugar de educaión basica</li>
+          <li>Medalla por competencia de matematicas</li>
+          <li>STEAM Maker Academy 2025</li>
+        </ul>
+      </article>
+
+      <!-- Tarjeta 2: Participación -->
+      <article class="badge-tile">
+        <span class="top-badge">PARTICIPACIÓN</span>
+        <h3>Participación</h3>
+        <ul class="tile-list">
+          <li>FIRST Global — robótica internacional</li>
+          <li>Hackathon — InterShip Experience</li>
+          <li>Expo de Logros — Green Mind</li>
+          <li>ExpoTech — Greenly</li>
+        </ul>
+      </article>
+
+      <!-- Tarjeta 3: Cursos -->
+      <article class="badge-tile">
+        <span class="top-badge">CURSOS</span>
+        <h3>Cursos</h3>
+        <ul class="tile-list">
+          <li>HTML, CSS y JavaScript — SoloLearn</li>
+          <li>Redes informáticas — Netcad</li>
+          <li>Robotica, deporte y arte - Fusalmo </li>
+        </ul>
+      </article>
+
+      <!-- Tarjeta 4: Certificaciones -->
+      <article class="badge-tile">
+        <span class="top-badge">CERTIFICACIONES</span>
+        <h3>Certificaciones</h3>
+        <ul class="tile-list">
+          <li>TOEIC — inglés</li>
+          <li>Excel Intermedio</li>
+          <li>Excel Avanzado</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+  <!-- ============ PORTAFOLIO (fondo alterno) ============ -->
+  <section id="portafolio" class="section alt">
+    <div class="wrap">
+      <p class="section-eyebrow">Portafolio</p>
+      <h2>Proyectos que transforman ideas en <em>resultados</em></h2>
+      <p class="section-lead">Algunos de los proyectos en los que he participado, demostrando compromiso, creatividad y ganas de generar un impacto positivo.</p>
+
+      <div class="card-grid three">
+        <article class="portfolio-card">
+          <div class="portfolio-img-wrap">
+          <img src="hacka.jfif" alt="Vista previa Proyecto 1" class="portfolio-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="img-placeholder"><strong>Sube tu imagen aquí</strong><span>hacka.jfif</span></div>
+        </div>
+          <div class="project-body">
+            <p class="tile-tag">Supérate · 2024</p>
+            <h3>Hackathon</h3>
+            <p>Desarrollo de InterShip Experience, una aplicación creada con Microsoft Power Apps para organizar la gestión y seguimiento de pasantías.</p>
+          </div>
+        </article>
+        <article class="portfolio-card">
+          <div class="portfolio-img-wrap">
+          <img src="expo.jpg" alt="Vista previa Proyecto 2" class="portfolio-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="img-placeholder"><strong>Sube tu imagen aquí</strong><span>expo.jpg</span></div>
+        </div>
+          <div class="project-body">
+            <p class="tile-tag">Supérate · 2024</p>
+            <h3>Expo de Logros — Green Mind</h3>
+            <p>Proyecto ambiental con una página web sobre huella de carbono y un prototipo físico de sistema de reciclaje, integrando tecnología y cuidado ambiental.</p>
+          </div>
+        </article>
+        <article class="portfolio-card">
+          <div class="portfolio-img-wrap">
+          <img src="expot.jpg" alt="Vista previa Proyecto 3" class="portfolio-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="img-placeholder"><strong>Sube tu imagen aquí</strong><span>expot.jpg</span></div>
+        </div>
+          <div class="project-body">
+            <p class="tile-tag">Supérate · 2025</p>
+            <h3>ExpoTech — Greenly</h3>
+            <p>Aplicación ambiental enfocada en promover hábitos sostenibles y generar conciencia sobre el impacto ambiental.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+<!-- ============ VOLUNTARIADO (MÁS ANCHO Y MENOS ALTO) ============ -->
+  <section id="voluntariado" class="section voluntariado-section">
+    <div class="wrap wrap-wide">
+      <p class="section-eyebrow eyebrow-light">VOLUNTARIADO</p>
+      <h2 class="title-light">Compromiso social</h2>
+      <p class="section-lead lead-light">Experiencias que me han permitido aprender, servir y generar un impacto positivo en mi comunidad.</p>
+
+      <!-- Slider Container -->
+      <div class="vol-slider-container">
+        
+        <!-- Slide 1 -->
+        <article class="vol-slide active">
+          <div class="vol-media">
+            <img src="vol.jpeg" alt="Servicio de comida en instituto" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="img-placeholder"><strong>Sube tu imagen aquí</strong><span>voluntariado1.jpg</span></div>
+          </div>
+          <div class="vol-content">
+            <span class="vol-tag">HORAS SOCIALES</span>
+            <h3 class="vol-title">Más de 75 horas sirviendo comida en un instituto</h3>
+            <p class="vol-desc">
+              Completé más de 75 horas de servicio social colaborando en el comedor y la atención de alimentos para los estudiantes del instituto, fomentando la convivencia y el compañerismo.
+            </p>
+          </div>
+        </article>
+
+        <!-- Slide 2 -->
+        <article class="vol-slide">
+          <div class="vol-media">
+            <img src="vol2.jfif" alt="Recaudación de fondos en iglesia" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="img-placeholder"><strong>Sube tu imagen aquí</strong><span>voluntariado2.jpg</span></div>
+          </div>
+          <div class="vol-content">
+            <span class="vol-tag">ACTIVIDAD COMUNITARIA</span>
+            <h3 class="vol-title">Preparación de comida para recaudar fondos</h3>
+            <p class="vol-desc">
+              Apoyo constante en la elaboración y venta de platillos durante eventos especiales de mi iglesia, con el propósito de recaudar fondos para proyectos benéficos y comunitarios.
+            </p>
+          </div>
+        </article>
+
+        <!-- Slide 3 -->
+        <article class="vol-slide">
+          <div class="vol-media">
+            <img src="vol3.jfif" alt="Campaña de limpieza comunitaria" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="img-placeholder"><strong>Sube tu imagen aquí</strong><span>voluntariado3.jpg</span></div>
+          </div>
+          <div class="vol-content">
+            <span class="vol-tag">IMPACTO AMBIENTAL</span>
+            <h3 class="vol-title">Campaña de limpieza en mi comunidad</h3>
+            <p class="vol-desc">
+              Participación activa en jornadas comunitarias para la recolección de desechos, limpieza de áreas verdes y concientización sobre el cuidado del medio ambiente local.
+            </p>
+          </div>
+        </article>
+
+        <!-- Botones de Navegación -->
+        <button class="vol-nav-btn prev" id="volPrevBtn" aria-label="Anterior voluntariado">
+          &#10094;
+        </button>
+        <button class="vol-nav-btn next" id="volNextBtn" aria-label="Siguiente voluntariado">
+          &#10095;
+        </button>
+
+        <!-- Indicadores -->
+        <div class="vol-dots">
+          <span class="vol-dot active" data-slide="0"></span>
+          <span class="vol-dot" data-slide="1"></span>
+          <span class="vol-dot" data-slide="2"></span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer id="contacto" class="site-footer">
+  <div class="wrap footer-row">
+    <!-- Lado izquierdo: Logo y Nombre a la par -->
+    <div class="footer-brand">
+      <span class="brand-mark small">
+        <img src="logo.PNG" alt="Logo DV" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <span class="brand-mark-fallback">DV</span>
+      </span>
+      <strong>Diana Vásquez</strong>
+    </div>
+    <p class="footer-tagline">Aprender, crear y aportar.</p>
+    <div class="footer-links">
+    </div>
+  </div>
+</footer>
+
+<!-- ============ SCRIPTS ============ -->
+<script>
+  // Le da un fondo más sólido a la barra de navegación cuando haces scroll
+  const header = document.querySelector('.site-header');
+  const onScroll = () => header.classList.toggle('is-scrolled', window.scrollY > 12);
+  onScroll();
+  window.addEventListener('scroll', onScroll, { passive: true });
+
+  // Abre y cierra el menú en móvil
+  const toggle = document.querySelector('.nav-toggle');
+  const nav = document.querySelector('.main-nav');
+  toggle.addEventListener('click', () => {
+    const open = nav.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', open);
+  });
+  document.querySelectorAll('.main-nav a').forEach(a => a.addEventListener('click', () => {
+    nav.classList.remove('open');
+    toggle.setAttribute('aria-expanded', false);
+  }));
+
+  const volSlides = document.querySelectorAll('.vol-slide');
+  const volDots = document.querySelectorAll('.vol-dot');
+  const prevBtn = document.getElementById('volPrevBtn');
+  const nextBtn = document.getElementById('volNextBtn');
+  let currentVolSlide = 0;
+
+  function showVolSlide(index) {
+    if (index >= volSlides.length) currentVolSlide = 0;
+    else if (index < 0) currentVolSlide = volSlides.length - 1;
+    else currentVolSlide = index;
+
+    volSlides.forEach((slide, i) => {
+      slide.classList.toggle('active', i === currentVolSlide);
+    });
+    volDots.forEach((dot, i) => {
+      dot.classList.toggle('active', i === currentVolSlide);
+    });
+  }
+
+  if (prevBtn && nextBtn) {
+    prevBtn.addEventListener('click', () => showVolSlide(currentVolSlide - 1));
+    nextBtn.addEventListener('click', () => showVolSlide(currentVolSlide + 1));
+    volDots.forEach((dot, i) => {
+      dot.addEventListener('click', () => showVolSlide(i));
+    });
+  }
+</script>
+</body>
+</html>
