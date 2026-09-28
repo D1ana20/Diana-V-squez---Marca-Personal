@@ -21,7 +21,6 @@
       </span>
       <span class="brand-text">
         <strong>Diana Vásquez</strong>
-        <small>Mi marca personal</small>
       </span>
     </a>
     <nav class="main-nav">
@@ -32,7 +31,6 @@
       <a href="#voluntariado">Voluntariado</a>
     </nav>
     <a href="#contacto" class="btn btn-primary">Contacto <span aria-hidden="true">→</span></a>
-    <!-- Botón hamburguesa, solo visible en móvil -->
     <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
@@ -79,7 +77,6 @@
         <p class="section-lead">Un recorrido por las etapas que han formado mi trayectoria académica.</p>
       </div>
 
-      <!-- Columna derecha: Las 3 tarjetas (sin íconos/emojis) -->
       <div class="formacion-cards">
         <article class="info-tile">
           <div class="tile-icon">
@@ -93,22 +90,22 @@
 
         <article class="info-tile">
           <div class="tile-icon">
-            <img src="2.png" alt="Ícono Bachillerato">
-          </div>
-          <p class="tile-tag">2016 - 2024</p>
-          <h3>Educación Básica</h3>
-          <p class="tile-org">Centro Escolar Prof. Atilio Armando Pérez Soto</p>
-          <p>Formación básica y desarrollo de competencias académicas, sociales y personales.</p>
-        </article>
-
-        <article class="info-tile">
-          <div class="tile-icon">
             <img src="3.png" alt="Ícono Bachillerato">
           </div>
           <p class="tile-tag">2024 - Actualidad </p>
           <h3>Educación extracurricular</h3>
           <p class="tile-org">Programa Empresarial ¡Supérate! Grupo Q</p>
           <p>Programa de formación que fortalece mis conocimientos en inglés, informática y valores, impulsando mi crecimiento académico y profesional.</p>
+        </article>
+
+        <article class="info-tile">
+          <div class="tile-icon">
+            <img src="2.png" alt="Ícono Bachillerato">
+          </div>
+          <p class="tile-tag">2016 - 2024</p>
+          <h3>Educación Básica</h3>
+          <p class="tile-org">Centro Escolar Prof. Atilio Armando Pérez Soto</p>
+          <p>Formación básica y desarrollo de competencias académicas, sociales y personales.</p>
         </article>
       </div>
     </div>
@@ -121,52 +118,196 @@
     <h2>Reconocimientos y certificaciones</h2>
     <p class="section-lead">Esfuerzo, disciplina y constancia en cada paso.</p>
 
-    <div class="logros-grid-2x2">
-      <!-- Tarjeta 1: Medallas -->
-      <article class="badge-tile">
-        <span class="top-badge">RECONOCIMIENTO</span>
-        <h3>Medallas</h3>
-        <ul class="tile-list">
-          <!-- Aquí puedes agregar tus medallas -->
-          <li>8 Medallas de primer lugar de educaión basica</li>
-          <li>Medalla por competencia de matematicas</li>
-          <li>STEAM Maker Academy 2025</li>
-        </ul>
-      </article>
-
-      <!-- Tarjeta 2: Participación -->
-      <article class="badge-tile">
-        <span class="top-badge">PARTICIPACIÓN</span>
+    <div class="logro-group">
+      <div class="logro-head">
         <h3>Participación</h3>
-        <ul class="tile-list">
-          <li>FIRST Global — robótica internacional</li>
-          <li>Hackathon — InterShip Experience</li>
-          <li>Expo de Logros — Green Mind</li>
-          <li>ExpoTech — Greenly</li>
-        </ul>
-      </article>
+        <p>Eventos y competencias donde he representado mi trabajo.</p>
+      </div>
+      <div class="logro-grid cols-3">
+        <figure class="logro-card">
+          <div class="logro-photo">
+            <img src="logros/hackathon.webp" alt="Hackathon" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="img-placeholder"><strong>Sube tu foto aquí</strong><span>logros/participacion-hackathon.jpg</span></div>
+          </div>
+          <figcaption>Hackathon</figcaption>
+        </figure>
+        <figure class="logro-card">
+          <div class="logro-photo">
+            <img src="logros/expologros.jpeg" alt="Expo de Logros" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="img-placeholder"><strong>Sube tu foto aquí</strong><span>logros/participacion-expo-logros.jpg</span></div>
+          </div>
+          <figcaption>Expo de Logros</figcaption>
+        </figure>
+        <figure class="logro-card">
+          <div class="logro-photo">
+            <img src="logros/expotech.jpg" alt="ExpoTech" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="img-placeholder"><strong>Sube tu foto aquí</strong><span>logros/participacion-expotech.jpg</span></div>
+          </div>
+          <figcaption>ExpoTech</figcaption>
+        </figure>
+        <figure class="logro-card">
+          <div class="logro-photo">
+            <img src="logros/steam25.jpg" alt="STEAM Maker Challenge 2025" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="img-placeholder"><strong>Sube tu foto aquí</strong><span>logros/participacion-steam-2025.jpg</span></div>
+          </div>
+          <figcaption>STEAM Maker Challenge 2025</figcaption>
+        </figure>
+        <figure class="logro-card">
+          <div class="logro-photo">
+            <img src="logros/steam26.jpg" alt="STEAM Maker Challenge 2026" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="img-placeholder"><strong>Sube tu foto aquí</strong><span>logros/participacion-steam-2026.jpg</span></div>
+          </div>
+          <figcaption>STEAM Maker Challenge 2026</figcaption>
+        </figure>
+        <figure class="logro-card">
+          <div class="logro-photo">
+            <img src="logros/first.jpg" alt="FIRST Global" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="img-placeholder"><strong>Sube tu foto aquí</strong><span>logros/participacion-first-global.jpg</span></div>
+          </div>
+          <figcaption>FIRST Global</figcaption>
+        </figure>
+      </div>
+    </div>
 
-      <!-- Tarjeta 3: Cursos -->
-      <article class="badge-tile">
-        <span class="top-badge">CURSOS</span>
-        <h3>Cursos</h3>
-        <ul class="tile-list">
-          <li>HTML, CSS y JavaScript — SoloLearn</li>
-          <li>Redes informáticas — Netcad</li>
-          <li>Robotica, deporte y arte - Fusalmo </li>
-        </ul>
-      </article>
-
-      <!-- Tarjeta 4: Certificaciones -->
-      <article class="badge-tile">
-        <span class="top-badge">CERTIFICACIONES</span>
+    <div class="logro-group">
+      <div class="logro-head">
         <h3>Certificaciones</h3>
-        <ul class="tile-list">
-          <li>TOEIC — inglés</li>
-          <li>Excel Intermedio</li>
-          <li>Excel Avanzado</li>
-        </ul>
-      </article>
+        <p>Validaciones oficiales de mis habilidades.</p>
+      </div>
+      <div class="logro-grid cols-3">
+        <figure class="logro-card">
+          <div class="logro-photo">
+            <img src="logros/Excel_Intermedio.png" alt="Excel Intermedio" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="img-placeholder"><strong>Sube tu foto aquí</strong><span>logros/certificaciones-excel-intermedio.jpg</span></div>
+          </div>
+          <figcaption>Excel Intermedio</figcaption>
+        </figure>
+        <figure class="logro-card">
+          <div class="logro-photo">
+            <img src="logros/Excel_Expert.png" alt="Excel Avanzado" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="img-placeholder"><strong>Sube tu foto aquí</strong><span>logros/certificaciones-excel-avanzado.jpg</span></div>
+          </div>
+          <figcaption>Excel Avanzado</figcaption>
+        </figure>
+        <figure class="logro-card">
+          <div class="logro-photo">
+            <img src="logros/Toeic.jpeg" alt="TOEIC" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="img-placeholder"><strong>Sube tu foto aquí</strong><span>logros/certificaciones-toeic.jpg</span></div>
+          </div>
+          <figcaption>TOEIC</figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <div class="logro-group">
+      <div class="logro-head">
+        <h3>Cursos</h3>
+        <p>Formación en programación y redes.</p>
+      </div>
+      <div class="logro-grid cols-4">
+        <figure class="logro-card">
+          <div class="logro-photo">
+            <img src="logros/html.png" alt="HTML — SoloLearn" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="img-placeholder"><strong>Sube tu foto aquí</strong><span>logros/cursos-sololearn-html.jpg</span></div>
+          </div>
+          <figcaption>HTML — SoloLearn</figcaption>
+        </figure>
+        <figure class="logro-card">
+          <div class="logro-photo">
+            <img src="logros/css.png" alt="CSS — SoloLearn" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="img-placeholder"><strong>Sube tu foto aquí</strong><span>logros/cursos-sololearn-css.jpg</span></div>
+          </div>
+          <figcaption>CSS — SoloLearn</figcaption>
+        </figure>
+        <figure class="logro-card">
+          <div class="logro-photo">
+            <img src="logros/javascript.png" alt="JavaScript — SoloLearn" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="img-placeholder"><strong>Sube tu foto aquí</strong><span>logros/cursos-sololearn-js.jpg</span></div>
+          </div>
+          <figcaption>JavaScript — SoloLearn</figcaption>
+        </figure>
+        <figure class="logro-card">
+          <div class="logro-photo">
+            <img src="logros/redes_cisco.PNG" alt="Introducción a redes informáticas — Cisco" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="img-placeholder"><strong>Sube tu foto aquí</strong><span>logros/cursos-cisco-redes.jpg</span></div>
+          </div>
+          <figcaption>Introducción a redes informáticas — Cisco</figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <div class="logro-group">
+      <div class="logro-head">
+        <h3>Certificados</h3>
+        <p>Reconocimientos por proyectos y programas.</p>
+      </div>
+      <div class="logro-grid cols-3">
+        <figure class="logro-card">
+          <div class="logro-photo">
+            <img src="logros/nido.jpeg" alt="Fusalmo Nido" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="img-placeholder"><strong>Sube tu foto aquí</strong><span>logros/certificados-fusalmo-nido.jpg</span></div>
+          </div>
+          <figcaption>Fusalmo Nido</figcaption>
+        </figure>
+        <figure class="logro-card">
+          <div class="logro-photo">
+            <img src="logros/univo.jpeg" alt="Proyecto Psicoeducativo — UNIVO" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="img-placeholder"><strong>Sube tu foto aquí</strong><span>logros/certificados-univo-psicoeducativo.jpg</span></div>
+          </div>
+          <figcaption>Proyecto Psicoeducativo — UNIVO</figcaption>
+        </figure>
+        <figure class="logro-card">
+          <div class="logro-photo">
+            <img src="logros/video_first.png" alt="FIRST Video Training Course" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="img-placeholder"><strong>Sube tu foto aquí</strong><span>logros/certificados-first-video.jpg</span></div>
+          </div>
+          <figcaption>FIRST Video Training Course</figcaption>
+        </figure>
+        <figure class="logro-card">
+          <div class="logro-photo">
+            <img src="logros/creador_first.png" alt="FIRST Content Creator Course" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="img-placeholder"><strong>Sube tu foto aquí</strong><span>logros/certificados-first-content.jpg</span></div>
+          </div>
+          <figcaption>FIRST Content Creator Course</figcaption>
+        </figure>
+        <figure class="logro-card">
+          <div class="logro-photo">
+            <img src="logros/FirstG.jpeg" alt="Certificado de FIRST" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="img-placeholder"><strong>Sube tu foto aquí</strong><span>logros/certificados-first-certificado.jpg</span></div>
+          </div>
+          <figcaption>Certificado de FIRST</figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <div class="logro-group">
+      <div class="logro-head">
+        <h3>Medallas</h3>
+        <p>Premios obtenidos por mi desempeño.</p>
+      </div>
+      <div class="logro-grid cols-3">
+        <figure class="logro-card">
+          <div class="logro-photo">
+            <img src="logros/medallas.jpeg" alt="Educación básica" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="img-placeholder"><strong>Sube tu foto aquí</strong><span>logros/medallas-educacion-basica.jpg</span></div>
+          </div>
+          <figcaption>Educación básica</figcaption>
+        </figure>
+        <figure class="logro-card">
+          <div class="logro-photo">
+            <img src="logros/medalla_mate.jpeg" alt="Competencia de matemáticas" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="img-placeholder"><strong>Sube tu foto aquí</strong><span>logros/medallas-matematicas.jpg</span></div>
+          </div>
+          <figcaption>Competencia de matemáticas</figcaption>
+        </figure>
+        <figure class="logro-card">
+          <div class="logro-photo">
+            <img src="logros/medalla_steam.jpeg" alt="STEAM Maker Challenge 2025" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="img-placeholder"><strong>Sube tu foto aquí</strong><span>logros/medallas-steam-2025.jpg</span></div>
+          </div>
+          <figcaption>STEAM Maker Challenge 2025</figcaption>
+        </figure>
+      </div>
     </div>
   </div>
 </section>
@@ -196,7 +337,7 @@
           <div class="img-placeholder"><strong>Sube tu imagen aquí</strong><span>expo.jpg</span></div>
         </div>
           <div class="project-body">
-            <p class="tile-tag">Supérate · 2025</p>
+            <p class="tile-tag">Supérate · 2024</p>
             <h3>Expo de Logros — Green Mind</h3>
             <p>Proyecto ambiental con una página web sobre huella de carbono y un prototipo físico de sistema de reciclaje, integrando tecnología y cuidado ambiental.</p>
           </div>
@@ -207,7 +348,7 @@
           <div class="img-placeholder"><strong>Sube tu imagen aquí</strong><span>expot.jpg</span></div>
         </div>
           <div class="project-body">
-            <p class="tile-tag">Supérate · 2026</p>
+            <p class="tile-tag">Supérate · 2025</p>
             <h3>ExpoTech — Greenly</h3>
             <p>Aplicación ambiental enfocada en promover hábitos sostenibles y generar conciencia sobre el impacto ambiental.</p>
           </div>
@@ -216,7 +357,7 @@
     </div>
   </section>
 
-<!-- ============ VOLUNTARIADO (MÁS ANCHO Y MENOS ALTO) ============ -->
+<!-- ============ VOLUNTARIADO  ============ -->
   <section id="voluntariado" class="section voluntariado-section">
     <div class="wrap wrap-wide">
       <p class="section-eyebrow eyebrow-light">VOLUNTARIADO</p>
@@ -294,7 +435,6 @@
 <!-- ============ FOOTER ============ -->
 <footer id="contacto" class="site-footer">
   <div class="wrap footer-row">
-    <!-- Lado izquierdo: Logo y Nombre a la par -->
     <div class="footer-brand">
       <span class="brand-mark small">
         <img src="logo.PNG" alt="Logo DV" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
@@ -302,12 +442,21 @@
       </span>
       <strong>Diana Vásquez</strong>
     </div>
-    <p class="footer-tagline">Aprender, crear y aportar.</p>
-    <div class="footer-links">
-    </div>
+    <a class="footer-email" href="mailto:diacuadra0.1@gmail.com">diacuadra0.1@gmail.com</a>
   </div>
 </footer>
 
+<!-- Ventana emergente de logros -->
+<div class="logro-modal" id="logroModal" role="dialog" aria-modal="true" aria-labelledby="logroModalTitle">
+  <div class="logro-modal-box">
+    <button class="logro-close" type="button" aria-label="Cerrar">×</button>
+    <img src="" alt="">
+    <div class="logro-modal-info">
+      <h3 id="logroModalTitle"></h3>
+      <p></p>
+    </div>
+  </div>
+</div>
 <!-- ============ SCRIPTS ============ -->
 <script>
   // Le da un fondo más sólido a la barra de navegación cuando haces scroll
@@ -353,7 +502,81 @@
     volDots.forEach((dot, i) => {
       dot.addEventListener('click', () => showVolSlide(i));
     });
+
+// Texto de cada logro. La clave es el nombre de la foto sin ".jpg"
+const LOGROS_INFO = {
+"hackathon": "Desarrollo de InterShip Experience, una app en Microsoft Power Apps para organizar la gestión y seguimiento de pasantías.",
+"expologros": "Proyecto ambiental Green Mind: página web sobre huella de carbono y prototipo físico de reciclaje.",
+"expotech": "Greenly, aplicación enfocada en promover hábitos sostenibles y concientizar sobre la huella de carbono.",
+"steam25": "Participación en el STEAM Maker Challenge con el Team Solution Makers, desarrollando y presentando un proyecto de robótica.",
+"steam26": "Participación en STEAM Maker Academy con el Team Solution Makers, trabajando en el diseño, construcción y mejora de un robot.",
+"first": "Participación con Team El Salvador en FIRST Global Challenge 2025 en Panamá, representando a El Salvador con un proyecto de robótica.",
+"Excel_Intermedio": "Certificación en Microsoft Excel, demostrando conocimientos en herramientas y funciones para el manejo de datos.",
+"Excel_Expert": "Certificación de Microsoft Excel Avanzado, fortaleciendo habilidades en análisis, funciones y manejo avanzado de datos.",
+"Toeic": "Certificación de inglés TOEIC, como parte del desarrollo de habilidades de comunicación en inglés.",
+"html": "Curso de HTML en SoloLearn, desarrollando conocimientos para crear y estructurar páginas web.",
+"css": "Curso de CSS en SoloLearn, aprendiendo a diseñar y dar estilo a páginas web.",
+"javascript": "Curso de JavaScript en SoloLearn, desarrollando conocimientos de programación e interactividad web.",
+"redes_cisco": "Curso de Cisco sobre redes, adquiriendo conocimientos básicos sobre conectividad, dispositivos y fundamentos de redes.",
+"nido": "Certificado de participación en Nido de FUSALMO durante octavo grado, fortaleciendo habilidades tecnológicas y personales.",
+"univo": "Participación en actividades psicoeducativas de la Universidad de Oriente, fortaleciendo el desarrollo personal y académico.",
+"video_first": "Participación en FIRST Global como integrante del Team El Salvador, formando parte de las actividades de comunicación y representación del equipo.",
+"creador_first": "Participación en la creación de contenido relacionado con la experiencia de Team El Salvador en FIRST Global.",
+"FirstG": "Certificado de participación en FIRST Global Challenge 2025, representando a El Salvador junto al Team Solution Makers.",
+"medallas": "Reconocimientos obtenidos durante educación básica por rendimiento académico y participación destacada en actividades escolares.",
+"medalla_mate": "Segundo lugar en una competencia de matemáticas en la que participaron tres instituciones educativas.",
+"medalla_steam": "Reconocimiento por obtener el primer lugar en el STEAM Maker Challenge con el Team Solution Makers."
+};
+
+(function () {
+  const modal = document.getElementById('logroModal');
+  const box = modal.querySelector('.logro-modal-box');
+  const mImg = modal.querySelector('img');
+  const mTitle = modal.querySelector('h3');
+  const mText = modal.querySelector('.logro-modal-info p');
+  const closeBtn = modal.querySelector('.logro-close');
+  let lastFocus = null;
+
+  function openModal(mode, card) {
+    const img = card.querySelector('img');
+    const hasPhoto = img && img.style.display !== 'none';
+    const key = img.getAttribute('src').split('/').pop().replace(/\.[^.]+$/, '');
+
+    if (mode === 'photo' && !hasPhoto) return;   // sin foto no hay nada que ampliar
+
+    box.classList.toggle('is-info', mode === 'info');
+    mImg.style.display = hasPhoto ? 'block' : 'none';
+    if (hasPhoto) { mImg.src = img.src; mImg.alt = img.alt; }
+    mTitle.textContent = card.querySelector('figcaption').textContent;
+    mText.textContent = LOGROS_INFO[key] || 'Escribe aquí la información.';
+
+    lastFocus = document.activeElement;
+    modal.classList.add('open');
+    document.body.style.overflow = 'hidden';
+    closeBtn.focus();
   }
+
+  function closeModal() {
+    modal.classList.remove('open');
+    document.body.style.overflow = '';
+    if (lastFocus) lastFocus.focus();
+  }
+
+  document.querySelectorAll('.logro-card').forEach(card => {
+    const btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'logro-read';
+    btn.textContent = 'Leer';
+    card.appendChild(btn);
+
+    btn.addEventListener('click', () => openModal('info', card));
+    card.querySelector('.logro-photo').addEventListener('click', () => openModal('photo', card));
+  });
+
+  closeBtn.addEventListener('click', closeModal);
+  modal.addEventListener('click', e => { if (e.target === modal) closeModal(); });
+  document.addEventListener('keydown', e => { if (e.key === 'Escape' && modal.classList.contains('open')) closeModal(); });
+})(); }
 </script>
 </body>
 </html>
