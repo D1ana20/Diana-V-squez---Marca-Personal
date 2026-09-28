@@ -662,6 +662,129 @@ li { margin-bottom: .3em; }
 .site-footer p,
 .site-footer strong { font-family: "Playfair Display", Georgia, serif; }
 .site-footer strong { font-size: 1.2rem; font-weight: 700; }
-.site-footer .muted { font-style: italic; font-size: 1rem; }
-.site-footer .signoff { font-family: "Playfair Display", Georgia, serif; font-style: italic; font-size: 1.35rem; }
-.site-footer .brand-mark { font-family: "Playfair Display", Georgia, serif; }
+
+/* ============ LOGROS ACADÉMICOS (rediseño con fotos) ============ */
+.logro-group { margin-top: 64px; }
+.logro-head {
+  display: flex; align-items: baseline; flex-wrap: wrap; gap: 6px 18px;
+  padding-bottom: 12px; margin-bottom: 24px;
+  border-bottom: 2px solid #4f7d5c;
+}
+.logro-head h3 { font-size: 1.8rem; margin: 0; }
+.logro-head p { margin: 0; font-size: .95rem; }
+.logro-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 24px; }
+.logro-card {
+  margin: 0;
+  flex: 0 0 calc((100% - 48px) / 3);
+  background: #ffffff;
+  border: 1px solid #ddd6c7;
+  border-radius: 14px;
+  overflow: hidden;
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+.logro-grid.cols-4 .logro-card { flex-basis: calc((100% - 72px) / 4); }
+.logro-card:hover { transform: translateY(-4px); box-shadow: 0 14px 28px -12px rgba(34,48,38,.25); }
+.logro-photo { aspect-ratio: 4 / 3; background: #eee7d7; overflow: hidden; }
+.logro-photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.logro-photo .img-placeholder { height: 100%; min-height: 0; border: 0; }
+.logro-card figcaption {
+  padding: 14px 16px; text-align: center;
+  font-weight: 600; font-size: .98rem; color: #223026;
+  border-top: 1px solid #f0ebe1;
+}
+@media (max-width: 900px) {
+  .logro-card, .logro-grid.cols-4 .logro-card { flex-basis: calc((100% - 24px) / 2); }
+}
+@media (max-width: 520px) {
+  .logro-card, .logro-grid.cols-4 .logro-card { flex-basis: 100%; }
+  .logro-head h3 { font-size: 1.5rem; }
+}
+/* ============ FOOTER compacto ============ */
+.site-footer { padding: 25px 0; }
+.site-footer .footer-row {
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 18px;
+}
+.footer-brand { display: flex; align-items: center; gap: 12px; }
+.site-footer .brand-mark.small { margin-bottom: 0; flex-shrink: 0; }
+.footer-email {
+  color: #d1e2d5;
+  font-family: "Playfair Display", Georgia, serif !important;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: color .2s ease;
+}
+.footer-email:hover { color: #88c498; text-decoration: underline; }
+
+@media (max-width: 640px) {
+  .site-footer .footer-row { flex-direction: row; align-items: center; }
+  .footer-email { font-size: .85rem; }
+}
+
+/* ============ Ver foto grande y botón Leer ============ */
+.logro-photo { cursor: zoom-in; }
+.logro-read {
+  display: block;
+  width: calc(100% - 32px);
+  margin: 0 16px 16px;
+  padding: 8px 0;
+  border: 1px solid #fbfcfb;
+  border-radius: 999px;
+  background: transparent;
+  color: #3c6247;
+  font: 600 .9rem "Inter", sans-serif;
+  cursor: pointer;
+  transition: background .2s ease, color .2s ease;
+}
+.logro-read:hover { background: #4f7d5c; color: #ffffff; }
+
+.logro-modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: rgba(20, 38, 26, .85);
+}
+.logro-modal.open { display: flex; }
+.logro-modal-box {
+  position: relative;
+  max-width: 900px;
+  max-height: 92vh;
+  overflow: auto;
+  background: #ffffff;
+  border-radius: 16px;
+}
+.logro-modal-box > img {
+  display: block;
+  max-width: 100%;
+  max-height: 90vh;
+  margin: 0 auto;
+  border-radius: 16px;
+}
+.logro-modal-info { display: none; padding: 24px 28px 28px; }
+.logro-modal-info p { margin: 0; color: #55645a; }
+.logro-close {
+  position: absolute;
+  top: 10px; right: 10px;
+  width: 38px; height: 38px;
+  border: 0;
+  border-radius: 50%;
+  background: #14261a;
+  color: #ffffff;
+  font-size: 1.6rem;
+  line-height: 1;
+  cursor: pointer;
+  z-index: 2;
+}
+.logro-close:hover { background: #4f7d5c; }
+
+/* Modo tarjeta de información */
+.logro-modal-box.is-info { width: min(520px, 100%); }
+.logro-modal-box.is-info > img { max-height: 240px; width: 100%; object-fit: cover; border-radius: 16px 16px 0 0; }
+.logro-modal-box.is-info .logro-modal-info { display: block; }
